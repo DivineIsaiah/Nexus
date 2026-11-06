@@ -1,0 +1,30 @@
+
+:root {
+    /* Backgrounds */
+    --color-background: #0B0B0B;
+    --color-surface: #141414;
+
+    /* Accent colours */
+    --color-primary: #FFD43B;
+    --color-secondary: #C99A16;
+
+    /* Typography */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #BDBDBD;
+
+    /* Borders */
+    --color-border: #292929;
+
+    /* Typography */
+    --font-primary: 'Lexend', sans-serif;
+    --font-secondary: 'Nunito Sans', sans-serif;
+
+    /* Border system */
+    --border-radius: 0;
+    --border-width: 1px;
+    --border-style: solid;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}

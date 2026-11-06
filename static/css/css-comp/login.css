@@ -1,0 +1,26 @@
+
+.login-page {
+    background: var(--color-background);
+}
+
+.login-form-panel {
+    border-top: 3px solid var(--color-primary);
+}
+
+/* LOGIN FORM INPUTS */
+
+.login-form-panel .form-group input {
+    transition: var(--transition-fast);
+}
+
+.login-form-panel .form-group input:focus {
+    border-color: var(--color-primary);
+}
+
+/* LOGIN RESPONSIVE */
+
+@media (max-width: 900px) {
+    .login-form-panel {
+        width: 100%;
+    }
+}

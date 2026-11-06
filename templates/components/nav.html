@@ -1,0 +1,37 @@
+
+<nav class="nexus-nav">
+    <div class="nav-container">
+
+        <!-- Brand -->
+        <a href="{{ url_for('home') }}" class="nav-brand">
+            NEXUS<span>.</span>
+        </a>
+
+        <!-- Navigation links -->
+        <div class="nav-links">
+
+            <a href="{{ url_for('home') }}" class="nav-link">
+                Home
+            </a>
+
+            <a href="{{ url_for('login') }}" class="nav-link">
+                Login
+            </a>
+
+            <a href="{{ url_for('signup') }}" class="nav-cta">
+                Get Started
+                <span>&rarr;</span>
+            </a>
+
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="nav-toggle" aria-label="Toggle navigation"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</nav>

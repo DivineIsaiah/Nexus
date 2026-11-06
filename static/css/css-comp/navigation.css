@@ -1,0 +1,138 @@
+
+/* =================================
+   NEXUS NAVIGATION
+================================= */
+
+.nexus-nav {
+    width: 100%;
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1440px;
+    min-height: 80px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brand */
+
+.nav-brand {
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--color-text-primary);
+}
+
+.nav-brand span {
+    color: var(--color-primary);
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-link {
+    font-family: var(--font-secondary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Call to action */
+
+.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 12px 22px;
+
+    background: var(--color-primary);
+    color: var(--color-background);
+
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: var(--transition-fast);
+}
+
+.nav-cta:hover {
+    background: var(--color-secondary);
+    color: var(--color-text-primary);
+}
+
+.nav-cta span {
+    font-size: 1.2rem;
+}
+
+/* Mobile toggle */
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--color-text-primary);
+    margin: 5px 0;
+}
+
+/* Responsive navigation */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        min-height: 70px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        padding: 25px 5%;
+
+        background: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
